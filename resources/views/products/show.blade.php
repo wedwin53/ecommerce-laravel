@@ -12,6 +12,7 @@
                 <p>{{$product->price}}</p>
                 <div class="card-actions">
                     <button type="button" name="button" class="btn btn-success">Agregar al Carrito</button>
+                    @include('products.delete')
                 </div>
 
             </div>
