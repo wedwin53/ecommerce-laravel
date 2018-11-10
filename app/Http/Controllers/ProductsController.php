@@ -7,6 +7,10 @@ use App\Product;
 
 class ProductsController extends Controller
 {
+    public function __construct(){
+        //con el middleware auth indicamos la excepciones donde no se requiere estar logeado
+        $this->middleware('auth', ['except' => ['index', 'show']]);
+    }
     /**
      * Display a listing of the resource.
      *
