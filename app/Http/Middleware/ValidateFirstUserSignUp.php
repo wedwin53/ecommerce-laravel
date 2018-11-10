@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use App\User;
-use Illuminate\Support\Facade\Auth;
+use Illuminate\Support\Facades\Auth;
 
 class ValidateFirstUserSignUp
 {
