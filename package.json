@@ -21,7 +21,7 @@
         "lodash": "^4.17.5",
         "popper.js": "^1.12",
         "vue": "2.5.17",
-        "webpack": "4.24.0",
+        "webpack": "^4.24.0",
         "webpack-cli": "^3.1.2"
     }
 }
