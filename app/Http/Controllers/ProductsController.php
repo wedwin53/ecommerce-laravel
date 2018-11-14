@@ -16,10 +16,13 @@ class ProductsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         //
         $products = Product::paginate(20);
+        if ($request->wantsJson()) {
+            return $products->toJson();
+        }
         return view('products.index', ['products' => $products]);
     }
 
